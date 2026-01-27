@@ -1,0 +1,68 @@
+:root{
+  --blanco:#ffffff;
+  --black:#000000;
+  --primario:#ffc107;
+  --secundario:#0097A7;
+  --gris:#757575;
+
+} /*custom propietises*/
+
+html{
+    font-size: 62.5%;
+    font-family: "Krub", sans-serif;
+}
+body{
+    font-size: 16px;
+}
+
+.titulo{
+   text-align: center;
+   font-size: 3.8rem;
+   
+}
+
+.titulo samp{
+    font-size: 2rem;
+}
+
+.conteiner{
+    width: 120rem;
+    margin: 0 auto 0 auto;
+}
+.nav-bg{
+ background-color: var(--secundario);
+
+}
+.navegaitor{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; /*distribuir los elemenmtos en un eje principakl */
+
+}
+
+.navegaitor a {
+    padding: 1rem;
+    color: var(--blanco);
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: bold;
+
+
+}
+
+.navegaitor a:hover { /*añadir que cambie de color onclick en cima dice gemini xd*/
+
+    background-color: var(--primario);
+    padding: 1rem;
+    color: var(--black);
+    
+}
+
+/*vamos a hacer la cosa responsive*/
+
+@media(min-wdth :480px) {
+    body{
+        background-color: #000000;
+    }
+}
